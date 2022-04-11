@@ -24,6 +24,8 @@ public class Ejercicio1_6 {
 	
 		ListaDeEnterosEnlazada l = f.sucesion(4); //creo lista de enteros para ponerle el resultado del metodo
 		
+		System.out.println(l);
+		
 		l.comenzar();
 		while (!l.fin()) {
 			System.out.println(l.proximo());
