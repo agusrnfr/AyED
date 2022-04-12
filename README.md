@@ -1,9 +1,9 @@
 # AyED
 
-La carpeta "Practicas" es todo el Proyecto a exportar con los ejercicios hechos a partir de la práctica número 2.
+La carpeta [*PRACTICAS*](https://github.com/agusrnfr/AyED/tree/main/Practicas) contiene todo el Proyecto a exportar con los ejercicios hechos a partir de la práctica número 2.
 
-## Ejercicios
+## Ejercicios resueltos
 
-**Practica 2**[LINK](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp02)
+*[**Practica 2**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp02)
 
-**Practica 3**[LINK](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp03)
+*[**Practica 3**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp03)
