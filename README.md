@@ -4,6 +4,6 @@ La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) c
 
 ## Ejercicios resueltos
 
-* [**Practica 2**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp02)
+* [**Práctica 2**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp02)
 
-* [**Practica 3**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp03)
+* [**Práctica 3**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp03)
