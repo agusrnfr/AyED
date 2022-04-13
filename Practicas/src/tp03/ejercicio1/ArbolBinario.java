@@ -93,7 +93,7 @@ public class ArbolBinario<T> {
 		}
 
 		return cantHojas;
-	}
+	} 
 	 
 
     public ArbolBinario<T> espejo() {
@@ -135,6 +135,6 @@ public class ArbolBinario<T> {
 				nivel++;	
 			}
 		}
-		
+	 	
 	}
 }
