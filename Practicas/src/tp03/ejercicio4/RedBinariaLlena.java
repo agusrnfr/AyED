@@ -3,7 +3,7 @@ import tp03.ejercicio1.*;
 
 public class RedBinariaLlena {
 	
-	public static int retardoEnvio (ArbolBinario<Integer> arbol) {
+	public static int retardoReenvio (ArbolBinario<Integer> arbol) {
 		if (arbol.esVacio())
 			return - 1;
 		
@@ -14,9 +14,9 @@ public class RedBinariaLlena {
 		
 		else {
 			if (arbol.tieneHijoIzquierdo()) 
-				cant = Math.max(cant,retardoEnvio(arbol.getHijoIzquierdo())); // la maxima altura seria el maximo retardo
+				cant = Math.max(cant,retardoReenvio(arbol.getHijoIzquierdo()));
 			if (arbol.tieneHijoDerecho())
-				cant = Math.max (cant,retardoEnvio(arbol.getHijoDerecho())); // la maxima altura seria el maximo retardo
+				cant = Math.max (cant,retardoReenvio(arbol.getHijoDerecho()));
 		}
 		return cant + arbol.getDato();
 	}

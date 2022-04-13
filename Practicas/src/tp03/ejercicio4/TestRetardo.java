@@ -23,7 +23,7 @@ public class TestRetardo {
 		c.agregarHijoDerecho(f);
 		
 		
-		System.out.println(RedBinariaLlena.retardoEnvio(a) + " SEGUNDOS");
+		System.out.println(RedBinariaLlena.retardoReenvio(a) + " SEGUNDOS");
 
 	}
 
