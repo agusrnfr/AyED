@@ -98,18 +98,16 @@ public class ArbolBinario<T> {
 
     public ArbolBinario<T> espejo() {
     	
-		ArbolBinario <T> temp = this.getHijoIzquierdo();
-		this.agregarHijoIzquierdo (this.getHijoDerecho());
-		this.agregarHijoDerecho (temp);
+		ArbolBinario <T> espejo = new ArbolBinario<T> (this.getDato());
 		
 		if (this.tieneHijoIzquierdo()) {
-			this.getHijoIzquierdo().espejo();
+			espejo.agregarHijoDerecho(this.getHijoIzquierdo().espejo());
 		}
 		if (this.tieneHijoDerecho()) {
-			this.getHijoDerecho().espejo();
+			espejo.agregarHijoIzquierdo(this.getHijoDerecho().espejo());
 		}
 		
-	    return this;
+	    return espejo;
 
     }
     

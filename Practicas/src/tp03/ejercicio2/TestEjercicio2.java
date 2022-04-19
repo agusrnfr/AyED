@@ -33,11 +33,11 @@ public class TestEjercicio2 {
 		
 		System.out.println(' ');
 		
-		a.espejo();
+		ArbolBinario<Integer> arbol2 = a.espejo();
 		
 		System.out.println(' ');
 		
-		imprimirArbol(a);
+		imprimirArbol(arbol2);
 		
 		System.out.println(' ');
 		
