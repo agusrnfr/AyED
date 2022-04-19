@@ -5,5 +5,5 @@ binario completo es lleno? ¿Y viceversa?
 
 Árbol binario completo: Dado un árbol binario T de altura h, diremos que T es completo si es lleno de altura h-1 y el nivel h se completa de izquierda a derecha.
 
-Todo arbol binario completo es lleno solo hasta h-1, despues puede que sea lleno o no.
+Todo arbol binario completo es lleno solo hasta h-1, despues puede que sea lleno o no. Si el nivel h no esta completo, entonces no es lleno.
 Un arbol lleno si es un arbol completo. Porque esta lleno de altura h-1 y el nivel h esta completo.
