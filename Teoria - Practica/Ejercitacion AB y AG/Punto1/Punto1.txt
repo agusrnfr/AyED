@@ -1,0 +1,25 @@
+1.- Dado un árbol binario T cuyo recorrido postorden es A G F E B J I H C D y su recorrido inorden es
+A B G E F D J H I C ¿cuántos son los descendientes del nodo “C”?
+
+postorden es A G F E  B  J I H C  D --> primero izquierdo, derecho y despues raiz
+inorden es A B G E F  D  J H I C --> primero izquierdo, raiz y despues derecho
+
+Sabemos por post orden que D es la raiz. 
+Sabemos que A es el hijo mas izquierdo porque es el primero en postorden y en inorden.
+Sabemos que A B G E F es toda la parte izquierda y J H I C es toda la parte derecha. 
+
+
+
+El padre de A es B (hijo izquierdo de D) porque esta ultimo en el sector izquierdo de postorden. Como En inorden G esta a la derecha de B, sabemos que es hijo derecho.
+El hijo derecho de B es E porque en postorden esta antes que este.
+G y F son los hijos de E --> postorden G F E (izquierdo,derecho y raiz)    inorden G E F  (izquierdo, raiz, derecho).
+
+
+J es el mas izquierdo de la parte derecha. 
+Sabemos que C es el hijo izquierdo de D porque esta antes que este en el postorden.
+Sabemos que H es el hijo izquierdo de C porque esta antes que el en el postorden.
+Sabemos que J es el hijo izquierdo de H e I es el hijo derecho porque --> postorden  J I H(izquierdo,derecho, raiz)   inorden J H I (izquierdo, raiz, derecho).
+Sabemos que C no tiene hijo derecho porque en el inorden no esta escrito nada despues de el. 
+
+Respuesta: Los descendientes del nodo C son 3, J, H e I.
+
