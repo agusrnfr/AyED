@@ -1,0 +1,9 @@
+5.- Evalúe la siguiente expresión postfija y determine cuál es el resultado.
+	6 5 * 7 3 − 4 8 + * +
+	(a) 78 (b) 66 (c) 34 (d) 44
+	
+(6 * 5) + ((7 - 3) * (4 +8))=
+   = 30 + (4 * 12) =
+   = 30 + 48 = 78
+   
+ Respuesta (a).

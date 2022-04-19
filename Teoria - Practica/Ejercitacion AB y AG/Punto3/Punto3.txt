@@ -1,0 +1,9 @@
+3.- Suponga que para un árbol binario T con N nodos (N>0), el último nodo en postorden es el
+mismo que el último nodo en inorden, ¿qué se puede concluir?
+
+(a) El subárbol izquierdo de T es vacío
+(b) El subárbol derecho de T es vacío
+(c) Ningún nodo en el árbol tiene dos hijos
+(d) Hay a lo sumo 3 nodos en el árbol
+
+Se puede concluir que el subarbol derecho de T es vacio. Respuesta (b).
