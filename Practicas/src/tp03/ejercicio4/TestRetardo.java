@@ -8,11 +8,11 @@ public class TestRetardo {
 		ArbolBinario<Integer> a = new ArbolBinario<Integer>(1); 
 		ArbolBinario<Integer> b = new ArbolBinario<Integer>(1); 
 		ArbolBinario<Integer> c = new ArbolBinario<Integer>(1); 
-		ArbolBinario<Integer> d = new ArbolBinario<Integer>(1); 
-		ArbolBinario<Integer> e = new ArbolBinario<Integer>(1);
+		ArbolBinario<Integer> d = new ArbolBinario<Integer>(0); 
+		ArbolBinario<Integer> e = new ArbolBinario<Integer>(0);
 		ArbolBinario<Integer> f = new ArbolBinario<Integer>(1);
 		ArbolBinario<Integer> g = new ArbolBinario<Integer>(1);
-		ArbolBinario<Integer> h = new ArbolBinario<Integer>(1);
+		ArbolBinario<Integer> h = new ArbolBinario<Integer>(0);
 		
 		a.agregarHijoIzquierdo(b);
 		a.agregarHijoDerecho(c);
@@ -22,8 +22,9 @@ public class TestRetardo {
 		f.agregarHijoDerecho(g);
 		c.agregarHijoDerecho(f);
 		
+		RedBinariaLlena red = new RedBinariaLlena(a);
 		
-		System.out.println(RedBinariaLlena.retardoReenvio(a) + " SEGUNDOS");
+		System.out.println(red.retardoReenvio() + " SEGUNDOS");
 
 	}
 
