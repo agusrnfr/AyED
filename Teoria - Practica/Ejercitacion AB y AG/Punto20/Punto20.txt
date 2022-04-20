@@ -1,0 +1,27 @@
+20.- Si un árbol general lleno de grado 5 tiene 125 hojas.
+a) ¿Cuál es la cantidad de nodos internos del árbol?
+b) Desarrolle el proceso realizado para obtener la respuesta anterior.
+
+a) La cantidad de nodos internos es 31.
+
+b)
+
+la cantidad de nodos de un nivel es igual al grado^nivel:
+	nivel 0 tiene 5^0 nodos, el nivel 1 tiene 5^1 nodos... entonces si 125 = 5^3, eso quiere decir que la altura es 3, tengo que sacar la cantidad de nodos
+	hasta la altura 2 o puedo sacar la cantidad total de nodos del arbol y restarle 125.
+	
+k = 5
+h = 2 	
+(k^(h+1) – 1) / (k-1) =
+= (5^(2+1) - 1) / (5-1) =
+= (5^(3) - 1) / 4 = 
+= 124 / 4 = 31.
+
+Chequeo:  
+k = 5
+h = 3 	
+((k^(h+1) – 1) / (k-1)) - 125 =
+= ((5^(3+1) - 1) / (5-1)) =
+= ((5^(4) -1)/ 4) - 125 =
+= (624 / 4) - 125 =
+= 156 - 125 = 31.
