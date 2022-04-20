@@ -1,0 +1,21 @@
+13.- Recontruya el árbol binario T cuyo recorrido preorden es 2 5 3 9 7 1 6 4 8 y su recorrido
+inorden es 9 3 7 5 1 2 6 8 4.
+
+preorden: raiz, izquierdo, derecho
+inorden: izquierdo, raiz, derecho
+
+preorden: 2 5 3 9 7 1 6 4 8
+inorden:  9 3 7 5 1 2 6 8 4
+
+Sabemos por el preorden que la raiz es 2. Entonces en el inorden 9 3 7 5 1 seria sub arbol izquierdo y 6 8 4 es subarbol derecho.
+Sabemos que la raiz del subarbol izquiero es 5 por el preorden (5) 3 9 7 1 y la del subarbol derecho es (6) 4 8.
+
+SUBARBOL DERECHO.
+Por el inorden sabemos que el 6 no tiene hijo izquierdo. 
+Sabemos que los descendientes de 6 son 4 y 8, siendo 4 su hijo derecho porque en el preorden se imprime primero que el 8.
+Sabemos que el 8 es el hijo izquierdo del 4 porque se imprime primero en el inorden.
+
+SUBARBOL IZQUIERDO.
+Sabemos que los descendientes de 5 son 9 3 7 y 1, siendo 1 su unico hijo derecho porque en el inorden es el unico que esta a su derecha.
+Por el preorden sabemos que el hijo izquierdo de 5 es 3.
+Sabemos que el hijo izquierdo de 3 es 9 porque en el inorden esta antes que el y sabemos que el hijo derecho de 3 es 7 porque en el inorden esta despues que el.

@@ -1,0 +1,7 @@
+17.- En un árbol general, la profundidad de un nodo n1 es……..
+a) La longitud del único camino que existe entre la raíz y el nodo n1
+b) La longitud del camino más largo que existe entre el nodo n1 y una hoja
+c) La cantidad de nodos hijos del nodo n1
+d) Ninguna de las otras opciones
+
+Respuesta: a)

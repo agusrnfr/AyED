@@ -1,0 +1,7 @@
+16.- El recorrido inorden en un árbol general visita:
+a) Primero la mitad de los subárboles hijos, luego la raíz y luego los restantes subárboles hijos
+b) Primero la raíz y luego los subárboles hijos
+c) Primero los subárboles hijos y luego la raíz
+d) Primero el subárbol hijo más izquierdo, luego la raíz y luego los restantes subárboles hijos
+
+Respuesta: d)

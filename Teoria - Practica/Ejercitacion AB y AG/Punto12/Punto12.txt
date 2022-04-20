@@ -1,0 +1,3 @@
+12.- ¿Cuál de los siguientes árboles binarios tiene su recorrido inorden BCAD y preorden A
+
+Respuesta: el árbol D. 
