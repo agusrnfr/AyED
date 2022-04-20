@@ -119,10 +119,10 @@ public class ArbolBinario<T> {
 		cola.encolar(this);
 		cola.encolar(null);
 		int nivel = 0;
-		while (!cola.esVacia()) {
+		while ((!cola.esVacia()) && (nivel <= m)) {
 			arbol = cola.desencolar();
 			if (arbol!= null){
-				if ((nivel >= n) && (nivel <= m)) 
+				if (nivel >= n)
 					System.out.println(arbol.getDato());
 				if (arbol.tieneHijoIzquierdo())
 					cola.encolar(arbol.getHijoIzquierdo());
