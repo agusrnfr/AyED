@@ -1,0 +1,33 @@
+11.- Obtenga la expresión prefija de la siguiente expresión postfija:
+
+			A B C * D - E F / G / - *
+
+			A (B * C) D - E F / G / - *
+
+			A ((B * C) - D) E F / G / - *
+
+			A ((B * C) - D) (E / F) G / - *
+
+			A ((B * C) - D) ((E / F) / G) - *
+
+			A (((B * C) - D) - ((E / F) / G)) *
+
+infija :	A * (((B * C) - D) - ((E / F) / G))
+
+			*A (((B * C) - D) - ((E / F) / G)) 
+			
+			*A -((B * C) - D) (E / F) / G)
+			
+prefija:	* A - - * B C D / / E F G
+
+			* A - - (B * C) D / / E F G
+			
+			* A - ((B * C) - D)/ / E F G
+			
+			* A - ((B * C) - D)/ (E / F)G
+			
+			* A - ((B * C) - D) ((E / F) / G)
+			
+			* A (((B * C) - D) - ((E / F) / G))
+			
+revision:	A * (((B * C) - D) - ((E / F) / G))
