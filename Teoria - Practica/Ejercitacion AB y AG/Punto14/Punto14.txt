@@ -3,7 +3,7 @@
 i. A es la raíz del árbol.
 ii. A es padre de B, C y D.
 iii. E y F son hermanos, puesto que ambos son hijos de B.
-iv. J, K, L, P, Q, N y O son las hojas del árbol.
+iv. E, J, K, L, C, P, Q, H, N y O son las hojas del árbol.
 v. El camino desde A a J es único, lo conforman los nodos A, B, F y J y es de largo
 3
 vi. G es ancestro de P, y por lo tanto P es descendiente de D.
