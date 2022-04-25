@@ -1,0 +1,18 @@
+Ejercicio 3
+Dados los siguientes árboles, indique si representan una heap. Justifique su respuesta.
+
+Teniendo en cuenta que una heap binaria debe cumplir:
+
+La propiedad de orden:
+Si es min-heap: 
+•	 El elemento mínimo está almacenado en la raíz .
+•	 El dato almacenado en cada nodo es menor o igual al de sus hijos.
+Si es max-heap: inverso.
+
+La propiedad estructural:
+
+•	Una heap es un vector basado en un árbol binario completo:
+	o	En un árbol binario lleno de altura h, los nodos internos tienen exactamente 2 hijos y las hojas tienen la misma profundidad.
+	o	Un árbol binario completo de altura h es un árbol binario lleno de altura h-1 y en el nivel h, los nodos se completan de izquierda a derecha.
+	
+El primer árbol no cumple la propiedad estructural y el segundo árbol no cumple la propiedad de orden.
