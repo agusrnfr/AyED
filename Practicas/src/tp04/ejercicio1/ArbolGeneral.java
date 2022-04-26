@@ -162,18 +162,84 @@ public class ArbolGeneral<T> {
 */
 	
 	public Integer altura() {
-		// Falta implementar..
-		return 0;
+		int altura=-1;
+		if (this.esHoja())
+			return 0;
+		else {
+			if (this.tieneHijos()) {
+				ListaGenerica<ArbolGeneral<T>> lhijos = this.getHijos();
+				lhijos.comenzar();
+				while (!lhijos.fin()){
+					altura = Math.max(altura,lhijos.proximo().altura());
+				}
+			}	
+		}
+		
+		return altura + 1;
 	}
 
 	public Integer nivel(T dato) {
-		// falta implementar
+		ColaGenerica<ArbolGeneral<T>> cola = new ColaGenerica<ArbolGeneral<T>>();
+		ArbolGeneral<T> aux;
+		
+		cola.encolar(this);
+		cola.encolar(null);
+		
+		int nivel = 0;
+		
+		while (!cola.esVacia()) {
+			aux = cola.desencolar();
+			if (aux != null) {
+				if (aux.getDato() == dato)
+					return nivel;
+				if (aux.tieneHijos()) {
+					ListaGenerica<ArbolGeneral<T>> lhijos = aux.getHijos();
+					lhijos.comenzar();
+					while (!lhijos.fin()){
+						cola.encolar(lhijos.proximo());
+					}
+				}
+			}
+			else
+				if (!cola.esVacia()) {			
+					cola.encolar(null);
+					nivel++;
+				}
+		}
 		return -1;
 	}
 
 	public Integer ancho() {
-		// Falta implementar..
-		return 0;
+		ColaGenerica<ArbolGeneral<T>> cola = new ColaGenerica<ArbolGeneral<T>>();
+		ArbolGeneral<T> aux;
+		
+		cola.encolar(this);
+		cola.encolar(null);
+		
+		int cantidad=0,max = -1,nivel = 0;
+		
+		while (!cola.esVacia()) {
+			aux = cola.desencolar();
+			if (aux != null) {
+				cantidad = cantidad + 1;
+				if (aux.tieneHijos()) {
+					ListaGenerica<ArbolGeneral<T>> lhijos = aux.getHijos();
+					lhijos.comenzar();
+					while (!lhijos.fin()){
+						cola.encolar(lhijos.proximo());
+					}
+				}
+			}
+			else
+				if (!cola.esVacia()) {			
+					cola.encolar(null);
+					nivel++;
+					if(cantidad > max)
+						max = cantidad;
+					cantidad=0;
+				}
+		}
+		return max;
 	}
 
 }
