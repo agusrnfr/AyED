@@ -1,0 +1,8 @@
+Ejercicio 9
+Suponga que una heap que representa una cola de prioridades está almacenada en el arreglo A (se
+comienza de la posición A[1]). Si insertamos la clave 16, ¿en qué posición quedará?
+i: 1 2 3 4 5 6 7 8 9 10 11 12
+A[i]: 11 21 27 37 36 34 32 43 44 42 51 62
+(a) A[2] (b) A[3] (c) A[6] (d) A[7] (e) A[12]
+
+Respuesta: (b) A[3].

@@ -1,0 +1,8 @@
+Ejercicio 10
+Suponga que una heap que representa una cola de prioridades está almacenada en el arreglo A (se
+comienza de la posición A[1]). Si aplica un delete-min, ¿en qué posición quedará la clave 62?
+i: 1 2 3 4 5 6 7 8 9 10 11 12
+A[i]: 11 21 27 37 36 34 32 43 44 42 51 62
+(a) A[1] (b) A[2] (c) A[10] (d) A[11] (e) A[12]
+
+Respuesta: (c) A[10].
