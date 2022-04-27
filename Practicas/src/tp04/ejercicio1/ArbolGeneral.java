@@ -120,7 +120,8 @@ public ListaGenerica<T> numerosImparesMayoresQuePreOrden (Integer n){
 	
 	public ListaGenerica<T> numerosImparesMayoresQuePostOrden (Integer n){
 		ListaGenerica<T> l = new ListaEnlazadaGenerica<T>();
-		if (this.getDato().getClass().getSimpleName().equals("Integer")) {
+		if (this.getDato().getClass().getSimpleName().equals("Integer")) // if (object instanceof Integer)
+		{
 			numerosImparesMayoresQuePostOrden(n,l);
 		}
 	return l;
@@ -255,4 +256,38 @@ public ListaGenerica<T> numerosImparesMayoresQuePreOrden (Integer n){
 		return max;
 	}
 
+	public Boolean esAncestro (T a,T b) {
+		ListaGenerica<T> lista = new ListaEnlazadaGenerica<T>();
+		ListaGenerica<T> camino = new ListaEnlazadaGenerica<T>();
+		lista.agregarInicio(this.getDato());
+		esAncestro (a,b,lista,camino);
+		if ((camino.incluye(a)) && (camino.incluye(b))){
+			return true;
+		}
+		return false;
+		
+	}
+	
+	private void clonar(ListaGenerica<T> lista,ListaGenerica<T> camino) {
+		lista.comenzar();
+		while (!lista.fin()) {
+			camino.agregarFinal(lista.proximo());
+		}
+	}
+
+	private void esAncestro(T a, T b,ListaGenerica<T> lista,ListaGenerica<T> camino) {
+		if (this.getDato() == b) 
+			clonar(lista,camino);
+		if (camino.esVacia()){
+			ListaGenerica<ArbolGeneral<T>> lhijos = this.getHijos();
+			lhijos.comenzar();
+			while ((!lhijos.fin()) && (camino.esVacia())){
+					ArbolGeneral<T> aux = lhijos.proximo();
+					lista.agregarFinal(aux.getDato());
+					aux.esAncestro(a,b,lista,camino);
+					lista.eliminarEn(lista.tamanio());
+				}
+			}
+		}
+			
 }
