@@ -70,9 +70,6 @@ public class ArbolGeneral<T> {
 		}
 	}
 	
-	public ListaEnlazadaGenerica<T> preOrden() {
-		return null;
-	}
 	
 public ListaGenerica<T> numerosImparesMayoresQuePreOrden (Integer n){
 		ListaGenerica<T> l = new ListaEnlazadaGenerica<T>();
