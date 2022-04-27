@@ -1,0 +1,18 @@
+Ejercicio 19
+El algoritmo HeapSort consta de dos etapas:
+1) se construye una heap y
+2) se realizan los intercambios necesarios para dejar ordenados los datos.
+Asuma que la heap ya está construida y es la siguiente:
+58 38 53 23 28 40 35 18
+¿Cómo quedan los datos en el arreglo después de ejecutar sólo 2 pasos de la segunda etapa del
+Heapsort?
+(a) 40 38 23 28 35 18 53 58
+(b) 53 38 40 23 28 18 35 58 --> esta
+(c) 40 38 23 35 28 18 53 58
+(d) 40 38 35 23 28 18 53 58
+
+Intercambio
+18 38 53 23 28 40 35 | 58
+
+Filtro 18
+53 38 40 23 28 18 35 | 58

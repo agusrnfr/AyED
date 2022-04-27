@@ -1,0 +1,6 @@
+Ejercicio 14
+En una Heap, ¿para un elemento que está en la posición i su hijo derecho está en la posición……?
+(a) | i/2 |
+(b) 2*i
+(c) 2*i + 1 --> esta 
+(d) Ninguna de las anteriores

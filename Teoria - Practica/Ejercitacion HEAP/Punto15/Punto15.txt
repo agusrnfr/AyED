@@ -1,0 +1,5 @@
+Ejercicio 15
+¿Siempre se puede decir que un árbol binario lleno es una Heap?
+(a) Sí (b) No
+
+b) No, puede que no cumpla la propiedad de orden.

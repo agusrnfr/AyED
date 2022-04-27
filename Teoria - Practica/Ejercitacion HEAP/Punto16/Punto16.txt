@@ -1,0 +1,6 @@
+Ejercicio 16
+La operación que agrega un elemento a la heap que tiene n elementos, en el peor caso es de ……
+(a) O(n)
+(b) O(n log n) 
+(c) O(log n) --> esta, el insertar es de O(log n), por lo tanto si quiero agregar un elemento lo que estoy haciendo es insertar.
+(d) Ninguna de las otras opciones

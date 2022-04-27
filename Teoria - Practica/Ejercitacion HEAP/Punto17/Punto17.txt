@@ -1,0 +1,7 @@
+Ejercicio 17
+Se construyó una Máx-Heap con las siguientes claves: 13, 21, 87, 30, 25, 22, 18. ¿Cuál de las siguientes
+opciones corresponde al resultado de realizar la construcción insertando las claves una a una?
+(a) 87, 30, 25, 22, 21, 18, 13
+(b) 87, 30, 22, 21, 25, 13, 18
+(c) 87, 30, 25, 13, 22, 18, 21
+(d) 87, 30, 22, 13, 25, 21, 18 --> esta.
