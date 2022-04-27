@@ -56,7 +56,28 @@ public class TestEjercicio3 {
 		
 		System.out.println("POR NIVELES: "+ listaDatos);
 		
+		
+		ListaGenerica <Integer> listaDatos2 = a.numerosImparesMayoresQuePreOrden(6);
+		
+		System.out.println("PREORDEN: " + listaDatos2);
+		
+		listaDatos2 = a.numerosImparesMayoresQueInOrden(6);
+		 
+		System.out.println("INORDEN: "+ listaDatos2);
+		
+		listaDatos2 = a.numerosImparesMayoresQuePostOrden(6);
+		
+		System.out.println("POSTORDEN: "+ listaDatos2);
+		
+		listaDatos2 = a.numerosImparesMayoresQuePorNiveles(6);
+		
+		System.out.println("POR NIVELES: "+ listaDatos2);
+		
+		
+	
+	
 	}
+	
 	
 	
 

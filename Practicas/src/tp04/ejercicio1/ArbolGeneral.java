@@ -74,14 +74,17 @@ public class ArbolGeneral<T> {
 		return null;
 	}
 	
-/*	public ListaGenerica<T> numerosImparesMayoresQuePreOrden (Integer n){
+public ListaGenerica<T> numerosImparesMayoresQuePreOrden (Integer n){
 		ListaGenerica<T> l = new ListaEnlazadaGenerica<T>();
-		numerosImparesMayoresQuePreOrden(n,l);
+		if (this.getDato().getClass().getSimpleName().equals("Integer")) {
+			numerosImparesMayoresQuePreOrden(n,l);
+		}
 		return l;
 	}
 	
 	private void numerosImparesMayoresQuePreOrden (Integer n,ListaGenerica<T> l){
-		if (((this.getDato() % 2) == 1) && (this.getDato() > n )) 
+		int num = (int) this.getDato();
+		if (((num % 2) == 1) && (num > n )) 
 			l.agregarFinal(this.getDato());
 		if(this.tieneHijos()) {
 			ListaGenerica <ArbolGeneral<T>> lhijos = this.getHijos();
@@ -93,17 +96,20 @@ public class ArbolGeneral<T> {
 	
 	public ListaGenerica<T> numerosImparesMayoresQueInOrden (Integer n){
 		ListaGenerica<T> l = new ListaEnlazadaGenerica<T>();
-		numerosImparesMayoresQueInOrden(n,l);
+		if (this.getDato().getClass().getSimpleName().equals("Integer")) {
+			numerosImparesMayoresQueInOrden(n,l);
+		}
 	return l;
 	}
 	
-	private ListaGenerica<T> numerosImparesMayoresQueInOrden (Integer n,ListaGenerica<T> l){
+	private void numerosImparesMayoresQueInOrden (Integer n,ListaGenerica<T> l){
 		if (this.tieneHijos()) {
 			ListaGenerica <ArbolGeneral<T>> lhijos = this.getHijos();
 			lhijos.comenzar();
 			lhijos.proximo().numerosImparesMayoresQueInOrden(n,l);
 		}
-		if (((this.getDato() % 2) == 1) && (this.getDato() > n )) 
+		int num = (int) this.getDato();
+		if (((num % 2) == 1) && (num > n )) 
 			l.agregarFinal(this.getDato());
 		if(this.tieneHijos()) {
 			ListaGenerica <ArbolGeneral<T>> lhijos = this.getHijos();
@@ -114,7 +120,9 @@ public class ArbolGeneral<T> {
 	
 	public ListaGenerica<T> numerosImparesMayoresQuePostOrden (Integer n){
 		ListaGenerica<T> l = new ListaEnlazadaGenerica<T>();
-		numerosImparesMayoresQuePostOrden(n,l);
+		if (this.getDato().getClass().getSimpleName().equals("Integer")) {
+			numerosImparesMayoresQuePostOrden(n,l);
+		}
 	return l;
 	}
 	
@@ -125,7 +133,8 @@ public class ArbolGeneral<T> {
 			while (!lhijos.fin()) 
 				lhijos.proximo().numerosImparesMayoresQuePostOrden(n,l);
 		}
-		if (((this.getDato() % 2) == 1) && (this.getDato() > n )) 
+		int num = (int) this.getDato();
+		if (((num % 2) == 1) && (num > n )) 
 			l.agregarFinal(this.getDato());
 		
 	}
@@ -133,33 +142,37 @@ public class ArbolGeneral<T> {
 	
 	public ListaGenerica<T> numerosImparesMayoresQuePorNiveles(Integer n){
 		ListaGenerica<T> l = new ListaEnlazadaGenerica<T>();
-		ColaGenerica<ArbolGeneral<T>> cola = new ColaGenerica<ArbolGeneral<T>>();
-		ArbolGeneral<T> aux;
-		
-		cola.encolar(this);
-		cola.encolar(null);
-		
-		while(!cola.esVacia()) {
-			aux = cola.desencolar();
-			if (aux!= null) {
-				if (((aux.getDato() % 2) == 1) && (aux.getDato() > n )) 
-					l.agregarFinal(aux.getDato());
-				if (aux.tieneHijos()) {
-					ListaGenerica<ArbolGeneral<T>> lhijos = aux.getHijos();
-					lhijos.comenzar();
-					while (!lhijos.fin()) {
-						cola.encolar(lhijos.proximo());
+		if (this.getDato().getClass().getSimpleName().equals("Integer")) {
+			int num = (int) this.getDato();
+			ColaGenerica<ArbolGeneral<T>> cola = new ColaGenerica<ArbolGeneral<T>>();
+			ArbolGeneral<T> aux;
+			
+			cola.encolar(this);
+			cola.encolar(null);
+			
+			while(!cola.esVacia()) {
+				aux = cola.desencolar();
+				if (aux!= null) {
+					num = (int) aux.getDato();
+					if (((num % 2) == 1) && (num > n )) 
+						l.agregarFinal(aux.getDato());
+					if (aux.tieneHijos()) {
+						ListaGenerica<ArbolGeneral<T>> lhijos = aux.getHijos();
+						lhijos.comenzar();
+						while (!lhijos.fin()) {
+							cola.encolar(lhijos.proximo());
+						}
+						
 					}
-					
 				}
+				else
+					if (!cola.esVacia())
+						cola.encolar(null);		
 			}
-			else
-				if (!cola.esVacia())
-					cola.encolar(null);		
 		}
 		return l;
 	}
-*/
+
 	
 	public Integer altura() {
 		int altura=-1;
