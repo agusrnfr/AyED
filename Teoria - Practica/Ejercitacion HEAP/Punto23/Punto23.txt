@@ -1,0 +1,8 @@
+Ejercicio 23
+Luego de una operación de borrado del mínimo en la siguiente min-heap, ¿cuántas claves han cambiado
+de lugar (es decir, ocupan en la min-heap resultante un lugar diferente al que ocupaban en la min-heap
+antes del borrado) ? (No contar la clave borrada, ya que no pertenece más a la heap)
+a) Ninguno
+b) Dos
+c) Tres
+d) Cuatro --> esta 
