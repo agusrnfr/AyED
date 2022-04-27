@@ -1,0 +1,129 @@
+Ejercicio 11
+a) Ordenar en forma creciente los datos del ejercicio anterior, usando el algoritmo HeapSort.
+b) ¿Cuáles serían los pasos a seguir si se quiere ordenar en forma decreciente?
+
+a) Primero construyo una max-heap con los datos del ejercicio anterior:
+{62, 51, 34, 44, 42, 27, 32, 43, 37, 21, 36, 11}
+
+
+Intercambio 
+
+{11,, 51, 34, 44, 42, 27, 32, 43, 37, 21, 36,| 62} y reduzco
+
+Filtro 11
+
+{51, 44, 34, 43, 42, 27, 32, 11, 37, 21, 36,| 62}
+
+
+
+Intercambio 
+
+{36, 44, 34, 43, 42, 27, 32, 11, 37, 21,| 51, 62} y reduzco
+
+
+Filtro 36
+
+{44, 43, 34, 37, 42, 27, 32, 11, 36, 21,| 51, 62}
+
+
+
+Intercambio
+
+{21, 43, 34, 37, 42, 27, 32, 11, 36,| 44, 51, 62} y reduzco
+
+Filtro 21
+
+{43, 42, 34, 37, 21, 27, 32, 11, 36,| 44, 51, 62}
+
+
+
+Intercambio 
+
+{36, 42, 34, 37, 21, 27, 32, 11,| 43, 44, 51, 62} y reduzco
+
+Filtro 36
+
+{42, 37, 34, 36, 21, 27, 32, 11,| 43, 44, 51, 62} 
+
+
+
+Intercambio 
+{11, 37, 34, 36, 21, 27, 32,| 42, 43, 44, 51, 62} y reduzco
+
+Filtro 11
+
+{37, 36, 34, 11, 21, 27, 32,| 42, 43, 44, 51, 62}
+
+
+
+
+Intercambio 
+
+{32, 36, 34, 11, 21, 27,| 37, 42, 43, 44, 51, 62} y reduzco
+
+Filtro 32
+
+{36, 32, 34, 11, 21, 27,| 37, 42, 43, 44, 51, 62}
+
+
+
+Intercambio 
+
+{27, 32, 34, 11, 21,| 36, 37, 42, 43, 44, 51, 62} y reduzco
+
+Filtro 27 
+
+{34, 32, 27, 11, 21,| 36, 37, 42, 43, 44, 51, 62}
+
+
+
+Intercambio 
+
+{21, 32, 27, 11,| 34, 36, 37, 42, 43, 44, 51, 62} y reduzco
+
+Filtro 21
+
+{32, 21, 27, 11,| 34, 36, 37, 42, 43, 44, 51, 62}
+
+
+
+Intercambio 
+
+{11, 21, 27,|  32, 34, 36, 37, 42, 43, 44, 51, 62} y reduzco 
+
+
+Filtro 11
+
+{26, 21, 11|  32, 34, 36, 37, 42, 43, 44, 51, 62} 
+
+
+
+Intercambio 
+{11, 21,| 26, 32, 34, 36, 37, 42, 43, 44, 51, 62} y reduzco
+
+Filtro 11
+
+{21, 11,| 26, 32, 34, 36, 37, 42, 43, 44, 51, 62}
+
+
+
+Intercambio 
+
+{11,| 21, 26, 32, 34, 36, 37, 42, 43, 44, 51, 62} y reduzco
+
+Filtro 11
+
+{11,| 21, 26, 32, 34, 36, 37, 42, 43, 44, 51, 62} y reduzco
+
+
+
+Intercambio
+
+{11, 21, 26, 32, 34, 36, 37, 42, 43, 44, 51, 62} y reduzco
+
+Resultado 
+{11, 21, 26, 32, 34, 36, 37, 42, 43, 44, 51, 62} 
+
+
+b) Si se quiere ordenar en forma decreciente con los datos del ejercicio anterior habria que hacer una min-heap, que ya esta hecha porque asi nos brindaron los datos, asi que lo
+unico que habria que hacer es ir intercambiando el primer elemento con el ultimo, reducir la cantidad de elementos y filtrar el primero hacia abajo.

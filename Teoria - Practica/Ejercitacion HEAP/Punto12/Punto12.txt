@@ -1,0 +1,7 @@
+Ejercicio 12
+¿Cuáles de los siguientes arreglos representan una max-heap, min-heap o ninguna de las dos?
+• arreglo 1: 0 1 2 0 4 5 6 7 8 9 --> ninguna
+• arreglo 2: 9 8 7 6 5 4 3 2 1 0 --> max-heap
+• arreglo 3: 5 5 5 6 6 6 6 7 7 1 --> ninguna 
+• arreglo 4: 9 3 9 2 1 6 7 1 2 1 --> max-heap
+• arreglo 5: 8 7 6 1 2 3 4 2 1 2 --> ninguna 
