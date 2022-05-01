@@ -25,27 +25,20 @@ public class TestBalanceo {
              if (inicio.incluye(act)) {
             	 pila.apilar(act);
              }
-             else {
-            	 if ((cierre.incluye(act)) && !(pila.esVacia())) {
+             else 
+            	 if ((cierre.incluye(act))&& !(pila.esVacia())) {
             		 ant = pila.desapilar();
             		 if (!((act.equals(')') && ant.equals('(')) ||
-            		 (act.equals(']') && ant.equals('[') )|| (act.equals('}') && ant.equals('{') ))) {
+            		 (act.equals(']') && ant.equals('[') )|| (act.equals('}') && ant.equals('{') )))
             			 return false;
-            			 
-            		 }
             	 }
             	 else return false;
-            	 
-             
-             
-             }
         }
-        if (!pila.esVacia()) { 
+        if (!pila.esVacia()) 
         	return false;
-        }
-        else {
-        	return true;
-        }
+        
+return true;
+  
   
         
 	}
@@ -53,7 +46,7 @@ public class TestBalanceo {
 	public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Ingrese los caracteres ()[]{} en el orden que desee : ");
-		String str = s.nextLine();
+		String str = s.next();
 		s.close();
   
         if (esBalanceado(str))

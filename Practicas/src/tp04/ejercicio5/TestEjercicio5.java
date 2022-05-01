@@ -34,7 +34,7 @@ public class TestEjercicio5 {
 		ArbolGeneral<AreaEmpresa> g = new ArbolGeneral<AreaEmpresa>(dato);
 		dato = new AreaEmpresa (12,"H");
 		ArbolGeneral<AreaEmpresa> h = new ArbolGeneral<AreaEmpresa>(dato);
-		dato = new AreaEmpresa (19,"I");
+		dato = new AreaEmpresa (100,"I");
 		ArbolGeneral<AreaEmpresa> i = new ArbolGeneral<AreaEmpresa>(dato);
 		
 		m.agregarHijo(j);

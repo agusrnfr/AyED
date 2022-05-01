@@ -82,13 +82,12 @@ public class ArbolBinario<T> {
 
 	public int contarHojas() {
 		int cantHojas = 0;
-		if (this.tieneHijoIzquierdo()) {
-			cantHojas = cantHojas + this.getHijoIzquierdo().contarHojas();
-		}
-		if (this.esHoja()) {
+		if (this.esHoja()) 
 			return 1;
-		}
-		if (this.tieneHijoDerecho()) {
+		else {
+		if (this.tieneHijoIzquierdo()) 
+			cantHojas = cantHojas + this.getHijoIzquierdo().contarHojas();
+		if (this.tieneHijoDerecho()) 
 			cantHojas = cantHojas + this.getHijoDerecho().contarHojas();
 		}
 
@@ -114,7 +113,7 @@ public class ArbolBinario<T> {
 
 
 	public void entreNiveles(int n, int m){
-		ArbolBinario<T> arbol = null;
+		ArbolBinario<T> arbol;
 		ColaGenerica<ArbolBinario<T>> cola = new ColaGenerica<ArbolBinario<T>>();
 		cola.encolar(this);
 		cola.encolar(null);

@@ -47,6 +47,8 @@ public class TestEjercicio7 {
 		
 		System.out.println("MINIMO : "+ test.minimoCaudal(1000.00));
 		
+		System.out.println("MINIMO : "+ test.minimoCaudal2(1000.00));
+		
 	}
 
 }

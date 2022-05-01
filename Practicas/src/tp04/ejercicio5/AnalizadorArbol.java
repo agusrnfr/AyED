@@ -19,25 +19,25 @@ public class AnalizadorArbol {
 		aux = cola.desencolar();
 		if (aux != null) {
 			total = total + aux.getDato().getTardanza();
-			cantidad = cantidad + 1;
+			cantidad++;
 			if (aux.tieneHijos()) {
 				ListaGenerica<ArbolGeneral<AreaEmpresa>> lhijos = aux.getHijos();
 				lhijos.comenzar();
-				while (!lhijos.fin()){
+				while (!lhijos.fin())
 					cola.encolar(lhijos.proximo());
-				}
 			}
 		}
-		else
+		else {	
+			total = total / cantidad;
+			if(total > max)
+				max = total;				
+			cantidad=0;
+			total = 0;
 			if (!cola.esVacia()) {			
 				cola.encolar(null);
 				nivel++;
-				total = total / cantidad;
-				if(total > max)
-					max = total;
-				cantidad=0;
-				total = 0;
 			}
+		}
 	}
 	return max;
 }	

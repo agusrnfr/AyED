@@ -63,7 +63,7 @@ public class TestEjercicio4 {
 		
 		System.out.println("ALTURA: "+ a.altura());
 		
-		int n = 7;
+		int n = 29;
 		
 		System.out.println("EL NUMERO "+n+" ESTA EN EL NIVEL: "+ a.nivel(n));
 		

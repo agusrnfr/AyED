@@ -1,7 +1,6 @@
 package tp04.ejercicio7;
 
-import tp02.ejercicio2.ListaEnlazadaGenerica;
-import tp02.ejercicio2.ListaGenerica;
+import tp02.ejercicio2.*;
 import tp02.ejercicio3.ColaGenerica;
 import tp04.ejercicio1.ArbolGeneral;
 
@@ -34,7 +33,8 @@ public class RedDeAguaPotable<T> {
 			aux = cola.desencolar();
 			auxCaudal = colaCaudal.desencolar();
 			
-			if (aux != null) {
+			if (aux != null) {				
+				System.out.println("NODO: "+ aux.getDato() + " CAUDAL: " + auxCaudal);
 				if (auxCaudal < min)
 					min = auxCaudal;
 				if(aux.tieneHijos()) {
@@ -46,10 +46,11 @@ public class RedDeAguaPotable<T> {
 					}
 					auxCaudal = auxCaudal / (double) cantidad;
 				}
-				else auxCaudal = 0.0;
+				else 
+					auxCaudal = 0.0;
 				for (int i= 0; i < cantidad; i++)
 					colaCaudal.encolar(auxCaudal);	
-				System.out.println("NODO: "+ aux.getDato() + " CAUDAL: " + auxCaudal);
+
 			}
 		else
 			if (!cola.esVacia()) {
@@ -62,9 +63,26 @@ public class RedDeAguaPotable<T> {
 		System.out.println(" ");
 		return min;
 	}
-		
 	
+	public double minimoCaudal2(double caudal) {
+		return minimoCaudal2(caudal,estructura);
+	}
 	
-	
-	
+	private double minimoCaudal2 (double caudal,ArbolGeneral<T> a) {
+		double min = 9999.99;
+		if (a.esHoja()) {
+			System.out.println("NODO: "+ a.getDato()+" CAUDAL: "+ caudal);
+			return caudal;
+		}
+		if(a.tieneHijos()) {
+			System.out.println("NODO: "+ a.getDato()+" CAUDAL: "+ caudal);
+			ListaGenerica<ArbolGeneral<T>> l = a.getHijos();
+			caudal = caudal /(double) l.tamanio();
+			l.comenzar();
+			while (!l.fin()) {
+				min = Math.min(min,minimoCaudal2(caudal,l.proximo()));
+			}
+		}
+		return min;
+	}
 }

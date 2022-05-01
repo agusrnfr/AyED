@@ -18,7 +18,7 @@ public class TestProfundidad {
 		
 		ProfundidadDeArbolBinario test = new ProfundidadDeArbolBinario(a);
 		
-		System.out.println(test.sumaElementosProfundidad(1));
+		System.out.println(test.sumaElementosProfundidad(0));
 
 	}
 

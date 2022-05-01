@@ -14,8 +14,8 @@ public class TestListaEnlazadaGenerica {
 		lista.agregarFinal(es3);
 		lista.agregarFinal(es4);
 		
-		for (int i = 1; i<= lista.tamanio(); i++) {
-			System.out.println(lista.elemento(i).tusDatos());	
+		while (!lista.fin()) {
+			System.out.println(lista.proximo().tusDatos());
 		}
 
 	}

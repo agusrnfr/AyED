@@ -1,4 +1,4 @@
-package tp02.ejercicio1;
+ package tp02.ejercicio1;
 
 public class Ejercicio1_6 {
 	

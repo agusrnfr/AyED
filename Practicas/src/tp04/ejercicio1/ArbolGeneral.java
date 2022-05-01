@@ -176,16 +176,12 @@ public ListaGenerica<T> numerosImparesMayoresQuePreOrden (Integer n){
 		int altura=-1;
 		if (this.esHoja())
 			return 0;
-		else {
-			if (this.tieneHijos()) {
-				ListaGenerica<ArbolGeneral<T>> lhijos = this.getHijos();
-				lhijos.comenzar();
-				while (!lhijos.fin()){
-					altura = Math.max(altura,lhijos.proximo().altura());
-				}
-			}	
+		if (this.tieneHijos()) {
+			ListaGenerica<ArbolGeneral<T>> lhijos = this.getHijos();
+			lhijos.comenzar();
+			while (!lhijos.fin())
+				altura = Math.max(altura,lhijos.proximo().altura());
 		}
-		
 		return altura + 1;
 	}
 
@@ -232,23 +228,24 @@ public ListaGenerica<T> numerosImparesMayoresQuePreOrden (Integer n){
 		while (!cola.esVacia()) {
 			aux = cola.desencolar();
 			if (aux != null) {
-				cantidad = cantidad + 1;
+				cantidad++;
 				if (aux.tieneHijos()) {
 					ListaGenerica<ArbolGeneral<T>> lhijos = aux.getHijos();
 					lhijos.comenzar();
-					while (!lhijos.fin()){
+					while (!lhijos.fin())
 						cola.encolar(lhijos.proximo());
-					}
 				}
 			}
-			else
+			else {					
+				if(cantidad > max)
+					max = cantidad;
+				cantidad=0;		
 				if (!cola.esVacia()) {			
 					cola.encolar(null);
 					nivel++;
-					if(cantidad > max)
-						max = cantidad;
-					cantidad=0;
+
 				}
+			}
 		}
 		return max;
 	}
@@ -261,8 +258,43 @@ public ListaGenerica<T> numerosImparesMayoresQuePreOrden (Integer n){
 		if ((camino.incluye(a)) && (camino.incluye(b))){
 			return true;
 		}
-		return false;
-		
+		return false;	
+	}
+	
+	public Boolean esAncestro2 (T a,T b) {
+		return buscarA(a,b,this);
+	}
+	
+	private Boolean buscarA (T a, T b, ArbolGeneral<T> arbol) {
+		Boolean ok = false;
+		if (arbol.getDato() == a) {
+			if (arbol.tieneHijos()) {
+				ListaGenerica <ArbolGeneral<T>> l = arbol.getHijos();
+				l.comenzar();
+				while((!l.fin())&& (!ok)) 
+					ok = buscarB(a,b,l.proximo());
+			}
+		}
+		if (arbol.tieneHijos()) {
+			ListaGenerica <ArbolGeneral<T>> l = arbol.getHijos();
+			l.comenzar();
+			while((!l.fin())&& (!ok)) 
+				ok = buscarA(a,b,l.proximo());	
+		}
+	 return ok;
+    }
+	
+	private Boolean buscarB (T a, T b, ArbolGeneral<T> arbol) {
+		Boolean ok = false;
+		if (arbol.getDato() == b)
+			return true;
+		if (arbol.tieneHijos()) {
+			ListaGenerica <ArbolGeneral<T>> l = arbol.getHijos();
+			l.comenzar();
+			while((!l.fin())&& (!ok)) 
+				ok = buscarB(a,b,l.proximo());
+		}
+	return ok;	
 	}
 	
 	private void clonar(ListaGenerica<T> lista,ListaGenerica<T> camino) {

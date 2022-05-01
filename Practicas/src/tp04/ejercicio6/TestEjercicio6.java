@@ -61,7 +61,8 @@ public class TestEjercicio6 {
 		
 		ArbolGeneral<Integer> a = new ArbolGeneral<Integer>(11,lista);
 		
-		System.out.println("ES ANCESTRO: " + a.esAncestro(7,10));
+		System.out.println("ES ANCESTRO: " + a.esAncestro(13,29));
+		System.out.println("ES ANCESTRO: " + a.esAncestro2(13,29));
 		
 	}
 
