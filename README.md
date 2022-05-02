@@ -1,4 +1,7 @@
 # AyED
+ <p align="center">
+  <img src= "https://i.postimg.cc/Vkp8wx6G/1bb8d848a713e4bea8aa98d9c40841b9.jpg" alt = "AyED"/>
+</p>
 
 La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) contiene todo el Proyecto a exportar con los ejercicios hechos a partir de la práctica número 2.
 
