@@ -16,3 +16,13 @@ La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) c
 * [**Práctica AB, AE y AG**](https://github.com/agusrnfr/AyED/tree/main/Teoria%20-%20Practica/Ejercitacion%20AB%20y%20AG)
 
 * [**Práctica Heap**](https://github.com/agusrnfr/AyED/tree/main/Teoria%20-%20Practica/Ejercitacion%20HEAP)
+
+## Primer Parcial 
+
+  Resolución *ejemplos parcial/parciales viejos*
+  
+### **ENUNCIADO 1** [↺](https://github.com/agusrnfr/AyED/blob/main/Enunciados%20y%20otros/Parcial1/ParcialEjer1.jpeg)
+* RESOLUCIÓN [↺](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/Parcial/Practica/Ejercicio1)
+
+### **ENUNCIADO 2** [↺](https://github.com/agusrnfr/AyED/blob/main/Enunciados%20y%20otros/Parcial1/ParcialEjer2.jpeg)
+* RESOLUCIÓN [↺](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/Parcial/Practica/Ejercicio2)
