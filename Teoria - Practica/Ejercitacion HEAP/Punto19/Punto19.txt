@@ -7,12 +7,20 @@ Asuma que la heap ya está construida y es la siguiente:
 ¿Cómo quedan los datos en el arreglo después de ejecutar sólo 2 pasos de la segunda etapa del
 Heapsort?
 (a) 40 38 23 28 35 18 53 58
-(b) 53 38 40 23 28 18 35 58 --> esta
+(b) 53 38 40 23 28 18 35 58 
 (c) 40 38 23 35 28 18 53 58
-(d) 40 38 35 23 28 18 53 58
+(d) 40 38 35 23 28 18 53 58 --> esta
 
+PASO 1 
 Intercambio
 18 38 53 23 28 40 35 | 58
 
 Filtro 18
 53 38 40 23 28 18 35 | 58
+
+PASO 2
+Intercambio 
+35 38 40 23 28 18| 53 58
+
+Filtro 35
+40 38 35 23 28 18| 53 58
