@@ -5,4 +5,4 @@ c) ¿El siguiente arreglo es una max-heap : [23, 17, 14, 6, 13, 10, 1, 5, 7, 12]
 
 a) Como minomo hay 2^h elementos.
 b) Se encuenta almacenado en alguna de las hojas.
-c) Si, es una max-heap porque cada dato de los nodos es mas grande que sus hijos.
+c) No, no es una max-heap porque no respeta la propiedad de que el dato almacenado en cada nodo es mayor o igual al de sus hijos (6 tiene como hijos 5 y 7, 7 es mayor).
