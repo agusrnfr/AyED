@@ -42,3 +42,6 @@ La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) c
 ### **ENUNCIADO 6** [↺](https://github.com/agusrnfr/AyED/blob/main/Enunciados%20y%20otros/Parcial1/ParcialEjer6.jpeg)
 * RESOLUCIÓN [↺](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/Parcial/Practica/Ejercicio6)
 
+### **ENUNCIADO 7** [↺](https://github.com/agusrnfr/AyED/blob/main/Enunciados%20y%20otros/Parcial1/ParcialEjer7.jpeg)
+* RESOLUCIÓN [↺](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/Parcial/Practica/Ejercicio7)
+
