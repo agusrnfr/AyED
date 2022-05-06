@@ -36,18 +36,14 @@ public class ArbolGeneralInt {
 	}
 	
 	private void numerosImparesMayoresQueInOrden (Integer n,ListaGenerica<Integer> l,ArbolGeneral<Integer> arbol){
-		if (arbol.tieneHijos()) {
-			ListaGenerica <ArbolGeneral<Integer>> lhijos = arbol.getHijos();
-			lhijos.comenzar();
+		ListaGenerica <ArbolGeneral<Integer>> lhijos = arbol.getHijos();
+		lhijos.comenzar();
+		if (!lhijos.esVacia())
 			numerosImparesMayoresQueInOrden(n,l,lhijos.proximo());
-		}
 		if (((arbol.getDato() % 2) == 1) && (arbol.getDato() > n )) 
 			l.agregarFinal(arbol.getDato());
-		
-		if(arbol.tieneHijos()) {
-			ListaGenerica <ArbolGeneral<Integer>> lhijos = arbol.getHijos();
-			while (!lhijos.fin()) 
-				numerosImparesMayoresQueInOrden(n,l,lhijos.proximo());
+		while (!lhijos.fin() && !lhijos.esVacia()) {
+			numerosImparesMayoresQueInOrden(n,l,lhijos.proximo());
 		}
 	}
 
