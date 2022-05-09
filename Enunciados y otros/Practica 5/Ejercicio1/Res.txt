@@ -1,0 +1,9 @@
+b.- ¿Por qué procesarMovimientos es tan ineficiente? Tenga en cuenta que pueden existir millones
+de movimientos diarios que abarquen gran parte de las cuentas bancarias.
+
+El arreglo de consulta se recorre 1 sola vez, pero el de cuentas se recorre n veces dependiento de las consultas que haya. Si hay dos consultas, el arreglo de cuentas se recorre 2 veces.
+
+c.- ¿En qué se diferencia procesarMovimientosOptimizado? Observe las operaciones que se
+realizan para cada consulta.
+
+El arreglo de consulta y el arreglo de cuentas se recorren ambos 1 sola vez.
