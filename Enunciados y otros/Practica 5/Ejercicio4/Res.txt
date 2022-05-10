@@ -1,0 +1,6 @@
+a. Falso, es de Orden(3^n) porque es c^n con c = 3.
+b. Verdadero, el orden si es una suma es del que crece mas rapido, en este caso n. Regla de la suma.
+c. Verdadero, el orden si es una suma es del que crece mas rapido, en este caso n^1/2 (el otro es constante, el que menos crece). Regla de la suma.
+d. Verdadero, el peor de los casos es que n sea menor a 100 ya que el orden es n (lineal), el otro el constante, tiene mas peso el orden n.
+e. Si es un polinomio el orden depende del grado. Como es un polinomio de grado 5, el orden es n^5. REGLA: T(n) es un polinomio de grado k => T(n) = O(n^k)
+f. Verdadero, si es un polinomio el orden depende del grado. REGLA: T(n) es un polinomio de grado k => T(n) = O(n^k)
