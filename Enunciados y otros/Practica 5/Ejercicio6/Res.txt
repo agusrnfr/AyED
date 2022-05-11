@@ -1,0 +1,41 @@
+Ejercicio 6
+a.- Se tiene un algoritmo A, que se ejecuta sobre una computadora que procesa 10.000 operaciones
+por segundo. Si el algoritmo A requiere f(n) = n * log10 n operaciones para resolver un problema,
+determine el tiempo en segundos requerido por el algoritmo para resolver un problema de tamaño
+n=10.000.
+
+PC --> 10.000 OP X SEG.
+ALGORITMO A = f(n) = n * log10 (n).
+
+Si n = 10.000 entonces A = f(10000) = n * log10 (10000) = 40000.
+
+10.000 _______ 1 seg
+
+40.000 _______ 4 seg.
+
+Requiere 4 segundos para resolver el problema.
+
+b.- Suponga que tenemos un algoritmo ALGO-1 cuyo tiempo de ejecución exacto es 100n3 para un
+tamaño de entrada n.
+
+i) si el tamaño de la entrada aumenta al doble, es decir, sería 2n, ¿Cuánto más lenta sería la
+respuesta del algoritmo ALGO-1?
+
+ALGO - 1 f(n) = 100 n^3
+
+tamaño de entrada 2n  entonces --> f(2n) = 100(2n)^3
+							       f(2n) = 100.2^3.n^3
+								   f(2n) = 100.8.n^3
+                                   f(2n) = 800n^3
+
+Seria 8 veces mas lenta.
+
+
+ii) y si aumenta al triple?
+
+tamaño de entrada 3n  entonces --> f(2n) = 100(3n)^3
+                                   f(2n) = 100.3^3.n^3
+								   f(2n) = 100.27.n^3
+                                   f(2n) = 2700n^3
+
+Seria 27 veces mas lenta.

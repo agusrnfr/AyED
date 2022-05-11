@@ -1,0 +1,26 @@
+a. Analizar si todos los algoritmos terminan o alguno puede quedar en loop infinito.
+1. El primer algoritmo puede quedar en un loop infinito si el random siempre tira numeros repetidos. Su peor escenario es que nunca se obtenga el numero que se quiere y nunca termine el algoritmo.
+2. El segundo algoritmo puede quedar en un loop infinito si el random siempre tira numeros repetidos. Su peor escenario es que nunca se obtenga el numero que se quiere y nunca termine el algoritmo.
+3. El tercer algoritmo no queda en loop si el random siempre tira numeros repetidos si no que intercambia siempre la misma posicion pero no genera un loop infinito ni
+
+b. Describa con palabras la cantidad de operaciones que realizan. 
+
+b. a) OPERACIONES:
+	* Se recorre la secuencia con un for desde i hasta n. 
+		* Se loopea un while en base a un numero random. (es como si fuera un for)
+			* Se recorre la secuencia en un for de k hasta i buscando si el numero esta repetido.
+	
+	Orden 3. For adentro de otro for adentro de otro for.
+	
+	b) OPERACIONES:
+	* Se recorre un for desde i hasta n poniendo el falso cada una de sus posiciones.
+	* Se recorre un for desde i hasta n generando permutaciones.
+		* Se recorre un while en base a un numero random. (es como si fuera un for).
+		
+	Orden 2. For adentro de otro for.
+	
+	c) OPERACIONES: 
+	* Se recorre un for desde i hasta n inicializando vector de resultados con un valor correspondiente a su posicion.
+	* Se recorre un for desde i hasta n intercambia lo que esta en el vector de resultados con otro valor en una posicion random (de lo que llevo recorrido).
+	
+	Ninguno esta adentro de otro. Orden 1. Algoritmo lineal.
