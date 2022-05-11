@@ -1,0 +1,76 @@
+a) 
+for(int i = 0; i< n; i++)
+	sum++;
+	
+
+	   (es lo mismo que i = 0 hasta n -1).
+T(n) = (sumatoria i = 1 hasta n) de cte1 =  
+	 = n * cte1.
+	 
+La cte1 representa la asignacion de la variable, la comparacion de i < n y el incremento de i, y el incremento de sum
+
+--------------------------------------------------------------------------------------------------------------------------
+b)
+for(int i = 0; i< n; i+=2)
+	sum++;
+	
+	
+	   (es lo mismo que i = 0 hasta n/2 -1).
+T(n) = (sumatoria i = 1 hasta n/2) de cte1 = 
+T(n) = n/2 * cte1
+
+La cte1 representa la asignacion de la variable, la comparacion de i < n y el incremento de i, y el incremento de sum
+
+--------------------------------------------------------------------------------------------------------------------------
+c) 
+for(int i = 0; i< n; i++)
+	for(int j = 0; j< n; j++)
+		sum++;
+
+		
+T(n) =(sumatoria i = 1 hasta n) de (sumatoria j = 1 hasta n) de cte1 =
+	 = n * n * cte1 =
+	 = n^2 cte1
+	 
+La cte1 representa la asignacion de la variable, la comparacion de i < n y j < n, el incremento de i y j, y el incremento de sum.
+	 
+--------------------------------------------------------------------------------------------------------------------------	 
+d)
+for(int i = 0; i< n; i++)
+	for(int j = 0; j< n*n; j++)
+		sum++;
+		
+		
+T(n) =(sumatoria i = 1 hasta n) de ( (sumatoria j = 1 hasta n*n) de cte1) =
+	 = n* (n*n*cte1) =
+	 = n^3*cte1.
+
+La cte1 representa la asignacion de la variable, la comparacion de i < n y j < n*n, el incremento de i y j, y el incremento de sum.
+
+--------------------------------------------------------------------------------------------------------------------------	 
+e)
+for(int i = 0; i< n; i++)
+	for(int j = 0; j< n; j++)
+		sum++;
+for(int i = 0; i< n; i++)
+ sum++
+ 
+ 
+T(n) = (sumatoria i = 1 hasta n) de (sumatoria j = 1 hasta n) de cte1 + (sumatoria i = 1 hasta n) de cte2
+	 = n^2 cte1 + n cte2
+ 
+La cte1 representa la asignacion de la variable, la comparacion de i < n y j < n, el incremento de i y j, y el incremento de sum.
+La cte2 representa la asignacion de la variable, la comparacion de i < n y el incremento de i, y el incremento de sum
+
+--------------------------------------------------------------------------------------------------------------------------
+g)
+for(int i = 0; i< n/2; i++)
+	for(int j = 0; j< n/2; j++)
+	sum++;
+	
+	
+T(n) = (sumatoria i = 1 hasta n/2) de (sumatoria j = 1 hasta n/2) de cte1 =
+     = n/2 * n/2 * cte1
+	 = n^2/4 * cte1 
+
+ La cte1 representa la asignacion de la variable, la comparacion de i < n/2 y j < n/2, el incremento de i y j, y el incremento de sum. 
