@@ -1,6 +1,124 @@
 a. Falso, es de Orden(3^n) porque es c^n con c = 3.
+
+Primer termino: 3^n <= 3^n 
+			
+c^n crece igual que c^n. Entonces: c^n <= c^n 
+Si se multiplica por 3 a ambos miembros: 3^n <= 3^n 
+
+En el lado izquierdo se obtiene el primer termino de T(n), y del lado derecho, se encuentra un valor para c1. Si c1 = 3 es posible acotar la funcion.
+
+Buscar n0
+
+Se tiene que 3^n <= 3^n, entonces si n0 = 1
+3^1 <= 3^1  --> vale la desigualdad.
+
+Como es un solo termino T(n) <= O(3^n) con c = 3 y con n0 = 2.
+
+
 b. Verdadero, el orden si es una suma es del que crece mas rapido, en este caso n. Regla de la suma.
+
+Primer termino: n <= n
+
+n crece igual que n. Entonces: n <= n 
+Si se multiplica por 1 a ambos miembros: n <= n 
+
+En el lado izquierdo se obtiene el primer termino de T(n), y del lado derecho, se encuentra un valor para c1. Si c1 = 1 es posible acotar la funcion.
+
+Buscar n0
+
+Se tiene que  n <= n , entonces si n0 = 0.
+0 <= 0 --> vale la desigualdad
+
+Segundo termino: log2 (n) <= n
+
+log2 (n) crece mas lento que n. Entonces log2 (n) <= n.
+Si se multiplica por 1 a ambos miembros: log2 (n) <= n.
+
+En el lado izquierdo se obtiene el primer termino de T(n), y del lado derecho, se encuentra un valor para c2. Si c2 = 1 es posible acotar la funcion.
+
+n0 = 1 --> log2 (1) <= 1 --> vale desigualdad. Con n0 = 0 no vale.
+
+Obtengo c y n0 para todo T(n):
+
+n + log2 (n) <= c1.n + c2.log2(n)
+n + log2 (n) <= (c1 + c2)n + log2(n)
+n + log2 (n) <= (1 + 1)n + log2(n)
+
+c = 2.
+
+n0 mas restrictivo --> n0 = 1.
+
+Por lo tanto: 
+
+T(n) <= O(n) con c = 2 y con n0 = 1.
+
+
 c. Verdadero, el orden si es una suma es del que crece mas rapido, en este caso n^1/2 (el otro es constante, el que menos crece). Regla de la suma.
+
 d. Verdadero, el peor de los casos es que n sea menor a 100 ya que el orden es n (lineal), el otro el constante, tiene mas peso el orden n.
+
+3n + 17 
+
+Orden candidato -> n.
+
+PRIMER TERMINO
+
+3n  <= n 
+
+Como n crece igual que n se puede decir que n <= n.
+Si c1 = 3, entonces 3n <= 3n
+
+n0 = 0. Se sigue cumpliendo la desigualdad 0 <= 0.
+
+SEGUNDO TERMINO 
+
+c2 <= n
+
+Como c crece mas lento que n entonces c <= n.
+Si c2 = 17, entonces 17 <= 17n.
+
+n0 = 6. Se sigue cumpliendo la desigualdad 17 <= 3.6 
+										   17 <= 18
+										   
+Obtengo c y n0 para todo T(n):
+
+3n + 17 <= c1.n + c2
+n + log2 (n) <= (c1 + c2)n
+n + log2 (n) <= (3 + 17)n
+
+c = 20.
+
+n0 mas restrictivo --> n0 = 6.
+
+Por lo tanto: 
+
+T(n) <= O(n) con c = 20 y con n0 = 6.
+
+317
+
+Orden candidato -> c.
+
+PRIMER Y UNICO TERMINO 
+
+c1 <= c
+
+c1 = 317. Se sigue cumpliendo 317 <= 317.
+
+n0 = 0. Se sigue cumpliendo desigualdad 317 <= 317
+
+Obtengo c y n0 para todo T(n):
+
+c = 317.
+
+n0 mas restrictivo --> n0 = 0.
+
+T(n) <= O(n) con c = 317 y con n0 = 0.
+
+OBTENGO PEOR CASO:
+
+3n + 17 tiene mayor orden que 317, por lo tanto es el peor caso y su orden es el orden de T(n).
+
+
 e. Si es un polinomio el orden depende del grado. Como es un polinomio de grado 5, el orden es n^5. REGLA: T(n) es un polinomio de grado k => T(n) = O(n^k)
+
 f. Verdadero, si es un polinomio el orden depende del grado. REGLA: T(n) es un polinomio de grado k => T(n) = O(n^k)
