@@ -1,0 +1,15 @@
+a) Defina las interfaces Grafo, Vértice y Arista de acuerdo a la especificación que se detalló, ubicada dentro
+del paquete ejercicio1.
+
+Interfaz represento comportamiento que quiero que tengan otras clases sin definirlo. 
+Conjunto de metodos, constantes y variables que hace que la clase que implementa la
+interfaz se comporte de una manera.
+
+Interfaz grafo: agregarVertice (Vertice<T> v) agrega vertice al grafo.
+				eliminarVertice (Vertice<T> v) elimina vertice del grafo.
+				conectar(Vertice<T> origen, Vertice<T> destino) conecta grafos.
+				Estos metodos deben ser definidos por las clases que implementen la interfaz Grafo
+
+Interfaz vertice:
+
+Interfaz arista:
