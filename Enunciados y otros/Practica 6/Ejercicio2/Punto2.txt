@@ -1,0 +1,17 @@
+Ejercicio 2
+a. Responda las siguientes preguntas considerando un grafo no dirigido de n vértices. Fundamentar.
+i. ¿Cuál es el mínimo número de aristas que puede tener si se exige que el grafo sea conexo?
+ii. ¿Cuál es el máximo número de aristas que puede tener si se exige que el grafo sea acíclico?
+iii. ¿Cuál es el número de aristas que puede tener si se exige que el grafo sea conexo y acíclico?
+iv. ¿Cuál es el número de aristas que puede tener si se exige que el grafo sea completo? (Un grafo
+es completo si hay una arista entre cada par de vértices.)
+b. En un grafo dirigido y que no tiene aristas que vayan de un nodo a sí mismo, ¿Cuál es el mayor número
+de aristas que puede tener? Fundamentar.
+
+a.Sea G un grafo no dirigido con n vértices y m aristas, entonces: 
+i. Si G conexo la cantidad de aristas es: m≥n-1
+ii. Si un grafo sea acicliclo es un bosque por lo que --> Si G bosque: m≤n-1
+iii. Si un grafo es conexo y aciclico es un arbol por lo que --> Si G árbol: m=n-1
+iv. Si se exige que el grafo sea completo m=n
+
+b. El mayor numero de aristas que puede tener es n*(n-1), ya que cada vertice apunta a todos menos a el mismo, osea apunta a n-1 y esto se repite para cada n. Es fuertemente conexo.

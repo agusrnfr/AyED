@@ -1,0 +1,29 @@
+Ejercicio 1
+Teniendo en cuenta las dos representaciones de grafos: Matriz de Adyacencias y Lista de Adyacencias.
+a. Bajo qué condiciones usaría una Matriz de Adyacencias en lugar de una Lista de Adyacencias para
+representar un grafo. Y una Lista de Adyacencias en lugar de una Matriz de Adyacencias.
+Fundamentar.
+b. ¿En función de qué parámetros resulta apropiado realizar la estimación del orden de ejecución para
+algoritmos sobre grafos densos? ¿Y para algoritmos sobre grafos dispersos? Fundamentar.
+c. Si representamos un grafo no dirigido usando una Matriz de Adyacencias, ¿cómo sería la matriz
+resultante? Fundamentar.
+
+
+a. Una Matriz de Adyacencias la usaria para un grafos pesados con número de vértices pequeño, o grafos densos ya que hay muchas conexiones entre los vertices y 
+se encuentran llenas casi toda las posiciones de la matriz, es decir, la cantidad de aristas es casi igual a vertice * vertice (E| ≈ |V|^2)
+   Una Lista de Adyacencias la usaria para grafos pesados con |E| menor que |V|^2, ya que si  usaria la Matriz, quedarin muchas posiciones con 0.
+   
+   
+b. Sobre grafos densos la estimacion se deberia realizar sabiendo nada mas la cantidad de vertices, porque la cantidad de aristas se va a acercar a V^2. Mientras
+que en los grafos dispersos, no podes saber la cantidad de aristas en base a los vertices, sino que tenes que conocer ambos.
+
+{ANOTACION 
+Los densos tienden a que todos los vertices esten conectados entre si. Sobre grafos densos seria V*V, ya que el orden se puede saber solo usando la cantidad de vertices
+porque la cantidad de aristas tiende a V^2. 
+Solo necesitas la cantidad de vertices porque la cantidad de  aristas se puede reemplazar con V^2. Como mucho van a haber V^2 aristas, donde en el peor de los casos vas
+a recorrer todas.
+En los dispersos no pasa eso con las aristas, como la cantidad de aristas no la sabes en base a los vertices, es decir, la cantidad de aristas no va a tender a V^2, 
+es importante saber tanto la cantidad de aristas como la cantidad  de vertices para poder estimar el orden. Entonces el orden lo calculas en funcion a la cantidad de 
+vertices y a la cantidad de aristas. El orden podria ser V+E o V*E dependiendo el algoritmo.
+
+c. Seria una matriz donde se marca con un 1 tanto la entrada ij como la entrada ji.
