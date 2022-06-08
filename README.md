@@ -17,10 +17,15 @@ La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) c
 
 * [**Práctica 5**](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Practica%205)
 
+* [**Práctica 6 puntos teóricos**](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Practica%206) 
+* [**Práctica 6 puntos prácticos**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src)
+
 ## Ejercitación Teórico - Práctica
 * [**Práctica AB, AE y AG**](https://github.com/agusrnfr/AyED/tree/main/Teoria%20-%20Practica/Ejercitacion%20AB%20y%20AG)
 
 * [**Práctica Heap**](https://github.com/agusrnfr/AyED/tree/main/Teoria%20-%20Practica/Ejercitacion%20HEAP)
+
+* [**Práctica Análisis de Algoritmos**](https://github.com/agusrnfr/AyED/tree/main/Teoria%20-%20Practica/Ejercitacion%20teorica%20de%20Analisis%20de%20Algoritmos)
 
 ## Primer Parcial 
 
