@@ -1,0 +1,13 @@
+2.- Exprese de qué orden es el siguiente fragmento de código
+for (int j = 4; j < n; j=j+2) {
+val = 0;
+	for (int i = 0; i < j; ++i) {
+	val = val + i * j;
+		for (int k = 0; k < n; ++k){
+		val++;
+		}
+	}
+}
+(a) O(n logn) (b) O(n^2) (c) O(n^2 log n) (e) O(n3)
+
+Respuesta => (e)

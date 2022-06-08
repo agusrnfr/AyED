@@ -1,0 +1,9 @@
+5.- ¿Cuál de las siguientes sentencias es correcta, según la definición vista en clase?
+(a) n^2 es O(n^2)
+(b) n^2 es O(n^3)
+(c) n^2 es O(n^2 log n)
+(d) Opciones a y b
+(e) Opciones a, b y c
+(f) Ninguna de las otras opciones
+
+Respuesta => (d)

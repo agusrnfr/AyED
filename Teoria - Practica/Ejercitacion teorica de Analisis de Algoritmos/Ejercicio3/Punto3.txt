@@ -1,0 +1,15 @@
+3.- Suponga que dispone de un algoritmo A, que resuelve un problema de tamaño n, y su función de
+tiempo de ejecución es T(n) = n * log(n). Este algoritmo se ejecuta en una computadora que procesa
+10.000 operaciones por segundo. Determine el tiempo que requerirá el algoritmo para resolver un
+problema de tamaño n=1024.
+
+PC --> 10.000 OP X SEG.
+ALGORITMO A = T(n) = n * log2 (n).
+
+Si n = 1024 entonces A = T(1024) = 1024 * log2 (1024) = .
+
+10.000 _______ 1 seg
+
+10240 _______ 1,024 seg.
+
+Requiere 1,024 segundos para resolver el problema.

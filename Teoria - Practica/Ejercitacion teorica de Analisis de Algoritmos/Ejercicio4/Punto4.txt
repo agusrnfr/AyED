@@ -1,0 +1,20 @@
+4.- ¿Cuál es el resultado de la siguiente sumatoria?
+
+8
+∑ n* i =
+i=3
+a) (8-3+1) * n
+b) (8-3+1) * i * n
+c) 33 n
+d) 5 n
+e) 8 * i
+f) Ninguna de las otras opciones
+
+
+8			  8          6
+∑ n * i = n * ∑ i  = n * ∑ i  = n * 6(6+1) = n * 42/2 = n * 21.
+i=3          i=3         i=1        ------
+									  2
+
+
+Respuesta => f)

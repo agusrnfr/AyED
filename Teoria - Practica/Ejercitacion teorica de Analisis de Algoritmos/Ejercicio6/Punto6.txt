@@ -1,0 +1,16 @@
+6.- Dado el siguiente algoritmo
+void ejercicio5 (int n) {
+	if (n ≥2) {
+	2 * ejercicio5 (n/2);
+	n = n/2;
+	ejercicio5 (n/2);
+	}
+}
+i) Indique el T(n) para n>=2
+(a) T(n) = d + 3 * T(n/2)
+(b) T(n) = d + 2 * T(n/2) + T(n/4)
+(c) T(n) = d + T(n/2) + T(n/4)
+(d) T(n) = d + T(n/2) + T(n/2)
+(e) T(n) = d + T(n/2) + T(n/2) + T(n/4)
+
+Respuesta => (c)

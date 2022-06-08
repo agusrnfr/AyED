@@ -1,0 +1,11 @@
+7.- Dada la recurrencia
+i) ¿Cómo se reemplaza T(n/3), considerando n/3 > 1?
+(a) T(n/3) + c
+(b) Ninguna de las otras opciones
+(c) T(n/3) + 1
+(d) T(n/3/3) + c
+(e) T(n/3/3) + 1
+
+T(n/3) = T (n/3/3) + c
+
+Respuesta => (d)
