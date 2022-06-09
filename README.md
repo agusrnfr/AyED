@@ -18,7 +18,7 @@ La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) c
 * [**Práctica 5**](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Practica%205)
 
 * [**Práctica 6 puntos teóricos**](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Practica%206) 
-* [**Práctica 6 puntos prácticos**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src)
+* [**Práctica 6 puntos prácticos**](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/tp06)
 
 ## Ejercitación Teórico - Práctica
 * [**Práctica AB, AE y AG**](https://github.com/agusrnfr/AyED/tree/main/Teoria%20-%20Practica/Ejercitacion%20AB%20y%20AG)
