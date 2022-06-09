@@ -7,9 +7,32 @@ interfaz se comporte de una manera.
 
 Interfaz grafo: agregarVertice (Vertice<T> v) agrega vertice al grafo.
 				eliminarVertice (Vertice<T> v) elimina vertice del grafo.
-				conectar(Vertice<T> origen, Vertice<T> destino) conecta grafos.
+				conectar(Vertice<T> origen, Vertice<T> destino) (hay uno con peso y otro sin peso) conecta grafos.
+				desConectar(Vertice<T> origen, Vertice<T> destino) dejar de ir de un vertice a otro
+				esAdyacente(Vertice<T> origen, Vertice<T> destino) se verifica si esta dentro de mi lista de adyacentes.
+				peso(Vertice<T> origen, Vertice<T> destino) retorna el peso que tiene la arista
+				listaDeVertices() retorna la lista de vertices 
+				listaDeAdyacentes(Vertice<T> v) retorna lista de adyacentes
+				vetice(int posicion) retorna un vertice dada su posicion 
+				esVacio() si el grafo es vacio retorna true
 				Estos metodos deben ser definidos por las clases que implementen la interfaz Grafo
 
-Interfaz vertice:
+Interfaz vertice: public T dato() retorna el dato del vertice
+				  public void setDato(T dato) setea el dato 
+				  public int getPosicion() retorna la posicion del vertice en el grafo
 
-Interfaz arista:
+Interfaz arista: public Vertice<T> verticeDestino() el vertice destino, como llegar al otro destino.
+				 public int peso() el peso de la arista. En los no pesados el peso es 1.
+				 
+				 
+d) Escriba una clase llamada AristaImpl que implemente la interface Arista. Es posible utilizar la interface y
+clases que implementan la misma tanto para grafos ponderados como no ponderados? Analice el
+comportamiento de los métodos que componen la misma.
+
+Si es posible, ya que en los ponderados se pone el peso que corresponde y en los no ponderados se pone siempre el peso 1. 
+	public Vertice<T> verticeDestino() retorna el vertice destino
+	public int peso() retorna el peso que tiene la arista.
+
+e) Analice qué métodos cambiarían el comportamiento en el caso de utilizarse para modelar grafos dirigidos.
+Ningun metodo cambiaria su comportamiento, ya que sirven para modelar tanto grafos dirigidos como grafos no dirigidos. 
+En vez de conectar vertice 1 con vertice 2 y despues vertice 2 con vertice 1 solo se haria una conexion, pero no cambia ningun metodo.

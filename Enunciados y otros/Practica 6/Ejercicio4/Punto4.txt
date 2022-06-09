@@ -1,0 +1,11 @@
+b. Estimar los órdenes de ejecución de los métodos anteriores.
+
+Siendo V = vertices y E = aristas :
+
+DFS 
+dfs(v) depende del número de vértices adyacentes que tenga (longitud de la lista de adyacencia,que es la cantidad de aristas). → el tiempo de todas las llamadas a dfs(v): O(|E|)
+* añadir el tiempo asociado al bucle de main_dfs(grafo), es decir, se repite por la cantidad de vertices que haya: O (|V|)).
+Tiempo del recorrido en profundidad es O(|V|+|E|).
+
+BFS
+Costo T(|V|,|E|) es de O(|V|+|E|) ya que en el peor de los casos, por cada vertice se visitan todos sus adyacentes, es decir, se pasa por todas las aristas.
