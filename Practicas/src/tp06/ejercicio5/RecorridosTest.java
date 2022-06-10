@@ -53,6 +53,7 @@ public class RecorridosTest {
 		while(!lis2.fin()) {
 			System.out.println(lis2.proximo().dato());
 		}
+	
 	}
 
 }
