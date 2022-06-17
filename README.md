@@ -27,6 +27,8 @@ La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) c
 
 * [**Práctica Análisis de Algoritmos**](https://github.com/agusrnfr/AyED/tree/main/Teoria%20-%20Practica/Ejercitacion%20teorica%20de%20Analisis%20de%20Algoritmos)
 
+* [**Práctica Grafos**](https://github.com/agusrnfr/AyED/tree/main/Teoria%20-%20Practica/Ejercitacion%20sobre%20Grafos)
+
 ## Primer Parcial 
 
   Resolución *ejemplos parcial/parciales viejos*
