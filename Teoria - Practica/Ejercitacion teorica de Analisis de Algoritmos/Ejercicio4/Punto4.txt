@@ -11,10 +11,4 @@ e) 8 * i
 f) Ninguna de las otras opciones
 
 
-8			  8          6
-∑ n * i = n * ∑ i  = n * ∑ i  = n * 6(6+1) = n * 42/2 = n * 21.
-i=3          i=3         i=1        ------
-									  2
-
-
-Respuesta => f)
+Respuesta => c)
