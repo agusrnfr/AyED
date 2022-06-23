@@ -6,4 +6,4 @@
 (e) Opciones a, b y c
 (f) Ninguna de las otras opciones
 
-Respuesta => (d)
+Respuesta => (e)
