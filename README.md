@@ -42,10 +42,9 @@ La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) c
  
 ### Tiempo de Ejecución
   
-* ENUNCIADOS [↺]()
-* RESOLUCIÓNES [↺]()
+* RESOLUCIÓNES [↺](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Parcial2/TiempoEjecucion)
 
 ### Grafos
-
-* ENUNCIADOS [↺]()
-* RESOLUCIÓNES [↺]()
+  No hice todavia 😞
+* ENUNCIADOS [↺](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Parcial2)
+* RESOLUCIÓNES [↺](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/Parcial)
