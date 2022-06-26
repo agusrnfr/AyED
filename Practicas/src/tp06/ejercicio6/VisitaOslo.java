@@ -55,6 +55,9 @@ public class VisitaOslo {
 						lis.agregarFinal(arista.verticeDestino().dato());
 						dfs (lugares,j,lis,camino,marca,destino,maxTiempo,lugaresRestringidos,tiempo);
 						lis.eliminarEn(lis.tamanio());
+						if (camino.esVacia()) {
+							marca[j] = false;
+						}
 					}
 					tiempo-= arista.peso();
 				}
@@ -68,6 +71,57 @@ public class VisitaOslo {
 		while(!lis.fin()) {
 			camino.agregarFinal(lis.proximo());
 		}
+	}
+	
+	public ListaGenerica<String> paseoEnBici2(Grafo<String> lugares, String destino, int maxTiempo, ListaGenerica<String> lugaresRestringidos){
+		ListaGenerica<String> camino = new ListaEnlazadaGenerica<String>();
+		boolean [] marca = new boolean[lugares.listaDeVertices().tamanio() + 1];
+		ListaGenerica<Vertice<String>> aux = lugares.listaDeVertices();
+		Vertice<String> v = null;
+		boolean ok = false;
+		aux.comenzar();
+		while(!aux.fin() && !ok) {
+			v = aux.proximo();
+			if (v.dato().equals("Ayuntamiento")) {
+				ok = true;
+			}
+		}
+		if (ok) {
+			paseoEnBici2(lugares,v.getPosicion(),camino,marca,maxTiempo,destino,lugaresRestringidos);
+		}
+		
+		return camino;
+	}
+	
+	private boolean paseoEnBici2(Grafo<String> lugares,int i,ListaGenerica<String> camino,boolean[]marca,int maxTiempo,String destino,ListaGenerica<String> restringido) {
+		boolean encontre = false;
+		marca[i] = true;
+		Vertice<String> v = lugares.listaDeVertices().elemento(i);
+		camino.agregarFinal(v.dato());
+		if (v.dato().equals(destino)) {
+			encontre = true;
+		}else {
+			ListaGenerica<Arista<String>>ady = lugares.listaDeAdyacentes(v);
+			ady.comenzar();
+			while (!ady.fin() && !encontre) {
+				Arista<String> arista = ady.proximo();
+				int j = arista.verticeDestino().getPosicion();
+				if (!marca[j] && !restringido.incluye(arista.verticeDestino().dato())) {
+					maxTiempo-= arista.peso();
+					if (maxTiempo >= 0) {
+						encontre = paseoEnBici2(lugares,j,camino,marca,maxTiempo,destino,restringido);
+					}
+					maxTiempo+= arista.peso();
+				}
+				
+			}
+			if (!encontre) {
+				marca[i] = false;
+				camino.eliminarEn(camino.tamanio());
+			}
+		}
+		
+		return encontre;
 	}
 
 }

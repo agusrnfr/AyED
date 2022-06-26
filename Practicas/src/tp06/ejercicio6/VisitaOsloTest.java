@@ -92,6 +92,13 @@ public class VisitaOsloTest {
 		while(!lis.fin()) {
 			System.out.println(lis.proximo());
 		}
+		System.out.println(" ");
+		ListaGenerica<String> lis2 = v.paseoEnBici2(bicisendas,"Museo Vikingo",120,lugaresRestringidos);
+		System.out.println("--- Se imprime primer camino2 ---");
+		lis2.comenzar();
+		while(!lis2.fin()) {
+			System.out.println(lis2.proximo());
+		}
 		
 		
 

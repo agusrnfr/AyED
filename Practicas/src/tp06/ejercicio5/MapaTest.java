@@ -48,6 +48,13 @@ public class MapaTest {
 			System.out.println(lis.proximo());
 		}
 		
+		ListaGenerica<String> lis6 = m.devolverCamino2("Buenos Aires","Asuncion");
+		System.out.println("--- Se imprime devolverCamino 2 ---");
+		lis6.comenzar();
+		while(!lis6.fin()) {
+			System.out.println(lis6.proximo());
+		}
+		
 		ListaEnlazadaGenerica<String> exceptuando = new ListaEnlazadaGenerica<String>();
 		exceptuando.agregarFinal("Santiago");
 		exceptuando.agregarFinal("Lima");
@@ -59,6 +66,13 @@ public class MapaTest {
 			System.out.println(lis2.proximo());
 		}
 		
+		ListaGenerica<String> lis7 = m.devolverCaminoExceptuando2("Buenos Aires","Asuncion",exceptuando);
+		System.out.println("--- Se imprime devolverCaminoExceptuando 2 ---");
+		lis7.comenzar();
+		while(!lis7.fin()) {
+			System.out.println(lis7.proximo());
+		}
+		
 		ListaGenerica<String> lis3 = m.caminoMasCorto("Buenos Aires","Asuncion");
 		System.out.println("--- Se imprime caminoMasCorto ---");
 		lis3.comenzar();
@@ -66,13 +80,26 @@ public class MapaTest {
 			System.out.println(lis3.proximo());
 		}
 		
-		ListaGenerica<String> lis4 = m.caminoSinCargarCombustible("Buenos Aires","Asuncion",503);
+		ListaGenerica<String> lis8 = m.caminoMasCorto2("Buenos Aires","Asuncion");
+		System.out.println("--- Se imprime caminoMasCorto 2 ---");
+		lis8.comenzar();
+		while(!lis8.fin()) {
+			System.out.println(lis8.proximo());
+		}
+
+		ListaGenerica<String> lis4 = m.caminoSinCargarCombustible("Buenos Aires","Asuncion",1);
 		System.out.println("--- Se imprime caminoSinCargarCombustible ---");
 		lis4.comenzar();
 		while(!lis4.fin()) {
 			System.out.println(lis4.proximo());
 		}
 		
+		ListaGenerica<String> lis9 = m.caminoSinCarga("Buenos Aires","Asuncion",1);
+		System.out.println("--- Se imprime caminoSinCargarCombustible 2 ---");
+		lis9.comenzar();
+		while(!lis9.fin()) {
+			System.out.println(lis9.proximo());
+		}
 		ListaGenerica<String> lis5 = m.caminoConMenorCargaDeCombustible("Buenos Aires","Asuncion",8);
 		//PARA COMPROBAR QUE FUNCIONA CAMBIAR ciudades.conectar(v1, v2,8); Y ciudades.conectar(v2, v5,8);
 		System.out.println("--- Se imprime caminoConMenorCargaDeCombustible ---");

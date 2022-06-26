@@ -53,6 +53,20 @@ public class RecorridosTest {
 		while(!lis2.fin()) {
 			System.out.println(lis2.proximo().dato());
 		}
+		System.out.println(" ");
+		System.out.println("--- Se imprime el GRAFO con DFS2 ---");
+		ListaGenerica <String> lis3 = r.dfs2(ciudades);
+		lis3.comenzar();
+		while(!lis3.fin()) {
+			System.out.println(lis3.proximo());
+		}
+		System.out.println(" ");
+		System.out.println("--- Se imprime el GRAFO con BFS2 ---");
+		ListaGenerica <String> lis4 = r.bfs2(ciudades);
+		lis4.comenzar();
+		while(!lis4.fin()) {
+			System.out.println(lis4.proximo());
+		}
 	
 	}
 

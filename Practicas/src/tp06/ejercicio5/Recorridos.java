@@ -64,4 +64,66 @@ public class Recorridos <T> {
 		}
 		
 	}
+	
+	
+	
+	public ListaGenerica<T> dfs2(Grafo<T> grafo){
+		boolean[]marca = new boolean[grafo.listaDeVertices().tamanio() + 1];
+		ListaGenerica<T> lis = new ListaEnlazadaGenerica<T>();
+		for (int i=1; i<=grafo.listaDeVertices().tamanio(); i++) {
+			if (!marca[i])
+				dfs2(i,grafo,lis,marca);
+		}
+		return lis;
+	}
+	
+	private void dfs2 (int i,Grafo<T> grafo,ListaGenerica<T> lis, boolean[] marca) {
+		marca[i] = true;
+		Vertice<T> v = grafo.listaDeVertices().elemento(i);
+		lis.agregarFinal(v.dato());
+		ListaGenerica<Arista<T>> ady = grafo.listaDeAdyacentes(v);
+		ady.comenzar();
+		while (!ady.fin()) {
+			Arista<T> arista = ady.proximo();
+			int j = arista.verticeDestino().getPosicion();
+			if (!marca[j])
+				dfs2(j,grafo,lis,marca);
+		}
+		
+	}
+	
+	
+	public ListaGenerica<T> bfs2 (Grafo<T> grafo){
+		boolean[]marca = new boolean[grafo.listaDeVertices().tamanio() + 1];
+		ListaEnlazadaGenerica<T> lis = new ListaEnlazadaGenerica<T>();
+		for (int i=1; i<=grafo.listaDeVertices().tamanio(); i++) {
+			if (!marca[i])
+				bfs2(i,grafo,lis,marca);
+		}
+		return lis;
+	}
+	
+	private void bfs2 (int i,Grafo<T> grafo,ListaEnlazadaGenerica<T> lis, boolean[] marca) {
+		ColaGenerica<Vertice<T>> cola = new ColaGenerica<Vertice<T>>();
+		cola.encolar(grafo.listaDeVertices().elemento(i));
+		marca[i]= true;
+		while(!cola.esVacia()) {
+			Vertice <T> v = cola.desencolar();
+			lis.agregarFinal(v.dato());
+			ListaGenerica<Arista<T>> ady = grafo.listaDeAdyacentes(v);
+			ady.comenzar();
+			while(!ady.fin()) {
+				Arista<T> arista = ady.proximo();
+				int j = arista.verticeDestino().getPosicion();
+				if (!marca[j]) {
+					cola.encolar(arista.verticeDestino());
+					marca[j] = true;
+				}
+			}
+		}
+		
+	}
+	
+	
+	
 }
