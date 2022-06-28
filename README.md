@@ -47,5 +47,5 @@ La carpeta [_PRACTICAS_](https://github.com/agusrnfr/AyED/tree/main/Practicas) c
 ### Grafos
 * RESOLUCIONES TEORICAS [↺](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Parcial2/Grafos/Teoria)
 
-* ENUNCIADOS [↺](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Parcial2/Grafos/Practica%20Enunciados)
+* ENUNCIADOS PRACTICOS [↺](https://github.com/agusrnfr/AyED/tree/main/Enunciados%20y%20otros/Parcial2/Grafos/Practica%20Enunciados)
 * RESOLUCIÓNES PRACTICAS [↺](https://github.com/agusrnfr/AyED/tree/main/Practicas/src/Parcial/Practica2)
