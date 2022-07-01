@@ -12,7 +12,6 @@ public class ParcialTest {
 		/*2*/	Vertice<String> Ariel = new VerticeImplListAdy<String>("Ariel");
 		/*3*/	Vertice<String> Juan = new VerticeImplListAdy<String>("Juan");
 		/*4*/	Vertice<String> Matias = new VerticeImplListAdy<String>("Matias");
-		/*5*/	Vertice<String> Alex = new VerticeImplListAdy<String>("Alex");
 		
 		Grafo<String> personas = new GrafoImplListAdy<String>();
 		
@@ -20,18 +19,21 @@ public class ParcialTest {
 		personas.agregarVertice(Matias);
 		personas.agregarVertice(Juan);
 		personas.agregarVertice(Ariel);
-		personas.agregarVertice(Alex);
 		
-		personas.conectar(Jorge, Matias);
+	/*	personas.conectar(Jorge, Matias);
 		personas.conectar(Matias, Jorge);
 		personas.conectar(Matias, Ariel);
 		personas.conectar(Ariel, Matias);
 		personas.conectar(Juan, Matias);
 		personas.conectar(Matias, Juan);
 		personas.conectar(Ariel, Juan);
-		personas.conectar(Juan, Ariel);
-		personas.conectar(Ariel, Alex);
-		personas.conectar(Alex, Ariel);
+		personas.conectar(Juan, Ariel); */
+		
+		personas.conectar(Jorge, Juan);
+		personas.conectar(Juan, Jorge);
+		
+		personas.conectar(Matias, Ariel);
+		personas.conectar(Ariel, Matias);
 		
 		Parcial parcial = new Parcial();
 		

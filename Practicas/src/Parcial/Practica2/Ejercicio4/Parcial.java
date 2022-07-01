@@ -9,13 +9,14 @@ import tp06.ejercicio3.Vertice;
 public class Parcial {
 	
 	public int maximoGradoDeSeparacion(Grafo<String> grafo) {
-		boolean[] marca = new boolean [grafo.listaDeVertices().tamanio() +1];
 		int max = -1;
 		
 		for (int i = 1; i <= grafo.listaDeVertices().tamanio();i++) {
+			boolean[] marca = new boolean [grafo.listaDeVertices().tamanio() +1];
 			if (!marca[i]) {
 				max = Math.max(max, bfs(grafo,i,marca));
-				marca[i] = false;
+				if (max == 0) 
+					return 0;
 			}
 		}
 		return max;
@@ -26,6 +27,7 @@ public class Parcial {
 		
 		cola.encolar(grafo.listaDeVertices().elemento(i));
 		cola.encolar(null);
+		int visitas = 1;
 		int nivel = 0;
 		marca[i] = true;
 		while(!cola.esVacia()) {
@@ -39,6 +41,7 @@ public class Parcial {
 					if (!marca[j]) {
 						cola.encolar(arista.verticeDestino());
 						marca[j] = true;
+						visitas++;
 					}
 				}
 				
@@ -50,9 +53,9 @@ public class Parcial {
 				}
 			}
 		}
-		
-		return nivel;
-		
+		if (visitas < grafo.listaDeVertices().tamanio()) 
+			return 0;
+			else return nivel;
 	}
 
 }
